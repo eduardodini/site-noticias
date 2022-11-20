@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import Navbar from './components/navbar/index';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Main from './pages/main';
+import Main from './pages';
 import Politics from './pages/politics';
 import Education from './pages/health';
 import Health from './pages/health';
