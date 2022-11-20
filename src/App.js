@@ -17,10 +17,10 @@ function App() {
         <Navbar />
         <Routes>
           <Route path='/' exact component={Main} />
-          <Route path='/about' component={Politics} />
-          <Route path='/events' component={Education} />
-          <Route path='/annual' component={Health} />
-          <Route path='/team' component={Contact} />
+          <Route path='/politics' component={Politics} />
+          <Route path='/education' component={Education} />
+          <Route path='/health' component={Health} />
+          <Route path='/contact' component={Contact} />
         </Routes>
       </Router>
     </><Footer /></>
