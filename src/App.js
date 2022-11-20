@@ -3,7 +3,7 @@ import './App.css';
 import Navbar from './components/navbar/index';
 import Footer from './components/footer/footer'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Main from './pages';
+import Main from './pages/index';
 import Politics from './pages/politics';
 import Education from './pages/health';
 import Health from './pages/health';
@@ -16,11 +16,11 @@ function App() {
       <Router>
         <Navbar />
         <Routes>
-          <Route path='/' exact component={Main} />
-          <Route path='/politics' component={Politics} />
-          <Route path='/education' component={Education} />
-          <Route path='/health' component={Health} />
-          <Route path='/contact' component={Contact} />
+          <Route path='/main' element={<Main />} />
+          <Route path='/politics' element={<Politics />} />
+          <Route path='/education' element={<Education />} />
+          <Route path='/health' element={<Health />} />
+          <Route path='/contact' element={<Contact />} />
         </Routes>
       </Router>
     </><Footer /></>
