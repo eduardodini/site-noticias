@@ -1,4 +1,5 @@
 import React from 'react';
+import NewsBox from '../components/newsbox/newsbox';
 
 const Contact = () => {
     return (
@@ -10,7 +11,10 @@ const Contact = () => {
                 height: '100vh'
             }}
         >
-            <h1>Contato</h1>
+            <NewsBox />
+            <NewsBox />
+            <NewsBox />
+            <NewsBox />
         </div>
     );
 };

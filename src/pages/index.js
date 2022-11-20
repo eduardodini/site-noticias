@@ -1,4 +1,5 @@
 import React from 'react';
+import NewsBox from '../components/newsbox/newsbox';
 
 const Main = () => {
 return (
@@ -10,7 +11,10 @@ return (
 		height: '100vh'
 	}}
 	>
-	<h1>Principal</h1>
+		<NewsBox />
+		<NewsBox />
+		<NewsBox />
+		<NewsBox />
 	</div>
 );
 };

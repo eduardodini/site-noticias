@@ -1,4 +1,5 @@
 import React from 'react'
+import NewsBox from '../components/newsbox/newsbox';
 
 const Education = () => {
     <div 
@@ -9,7 +10,10 @@ const Education = () => {
         height: '100vh'
     }}
     >
-        <h1>Educação</h1>
+        <NewsBox />
+        <NewsBox />
+        <NewsBox />
+        <NewsBox />
     </div>
 }
 

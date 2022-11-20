@@ -1,16 +1,28 @@
 import React from 'react';
+import NewsBox from '../components/newsbox/newsbox';
 
 const Politics = () => {
     return (
         <div
             style={{
-                display: 'flex',
+                display: 'grid',
                 justifyContent: 'Right',
                 alignItems: 'Right',
                 height: '100vh'
             }}
         >
-            <h1>Política</h1>
+            <NewsBox />
+            <NewsBox />
+            <NewsBox />
+            <NewsBox />
+            <NewsBox />
+            <NewsBox />
+            <NewsBox />
+            <NewsBox />
+            <NewsBox />
+            <NewsBox />
+            <NewsBox />
+            <NewsBox />
         </div>
     );
 };
