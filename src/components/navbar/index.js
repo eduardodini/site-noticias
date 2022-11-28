@@ -12,21 +12,11 @@ const Navbar = () => {
         <Nav>
             <Bars />
             <NavMenu>
-                <NavLink to='/main'activeStyle>
-                    Principal
-                </NavLink>
-                <NavLink to='/politics'activeStyle>
-                    Política
-                </NavLink>
-                <NavLink to='/education'activeStyle>
-                    Educação 
-                </NavLink>
-                <NavLink to='/health'activeStyle>
-                    Saúde
-                </NavLink>
-                <NavLink to='/contact'activeStyle>
-                    Contato
-                </NavLink>
+                <NavLink to='/main'activeStyle>Principal</NavLink>
+                <NavLink to='/politics'activeStyle>Política</NavLink>
+                <NavLink to='/education'activeStyle>Educação </NavLink>
+                <NavLink to='/health'activeStyle>Saúde</NavLink>
+                <NavLink to='/contact'activeStyle>Contato</NavLink>
             </NavMenu>
         </Nav>
         </>

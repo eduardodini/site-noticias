@@ -1,10 +1,10 @@
 import React from 'react'
-import NewsBox from '../components/newsbox/newsbox';
+import NewsCard from '../components/newsbox/newsbox';
 
 const Education = () => {
     <div 
     style={{
-        display: 'flex',
+        display: 'grid',
         justifyContent: 'right',
         alignItems: 'right',
         height: '100vh'

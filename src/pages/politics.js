@@ -1,5 +1,5 @@
 import React from 'react';
-import NewsBox from '../components/newsbox/newsbox';
+import NewsCard from '../components/newsbox/newscard';
 
 const Politics = () => {
     return (
@@ -11,18 +11,10 @@ const Politics = () => {
                 height: '100vh'
             }}
         >
-            <NewsBox />
-            <NewsBox />
-            <NewsBox />
-            <NewsBox />
-            <NewsBox />
-            <NewsBox />
-            <NewsBox />
-            <NewsBox />
-            <NewsBox />
-            <NewsBox />
-            <NewsBox />
-            <NewsBox />
+            <NewsCard />
+            <NewsCard />
+            <NewsCard />
+            <NewsCard />
         </div>
     );
 };

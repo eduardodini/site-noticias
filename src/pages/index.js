@@ -1,22 +1,22 @@
 import React from 'react';
-import NewsBox from '../components/newsbox/newsbox';
+import NewsCard from '../components/newsbox/newscard';
 
 const Main = () => {
-return (
-	<div
-	style={{
-		display: 'flex',
-		justifyContent: 'Right',
-		alignItems: 'Right',
-		height: '100vh'
-	}}
-	>
-		<NewsBox />
-		<NewsBox />
-		<NewsBox />
-		<NewsBox />
-	</div>
-);
+	return (
+		<div
+			style={{
+				display: 'inline',
+				justifyContent: 'Right',
+				alignItems: 'Right',
+				height: '100vh',
+			}}
+		>
+            <NewsCard />
+            <NewsCard />
+            <NewsCard />
+            <NewsCard />
+		</div>
+	);
 };
 
 export default Main;
