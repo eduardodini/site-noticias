@@ -38,11 +38,26 @@ class Health extends React.Component {
     }
 
     getHeadline = (article, index) => {
-        return (
-            <Col key={index} className="mb-3">
-                <NewsCard article={article}></NewsCard>
-            </Col>
-        )
+        if(index % 3 === 0 && index < 6) {
+            return (
+                <><Row key={"row_"+index}>
+                    <Col key={"col_"+index} className="mb-3">
+                        <NewsCard key={"nc_"+index} article={this.state.headlines[index]}></NewsCard>
+                    </Col>
+                    <Col key={"col_"+(index + 1)} className="mb-3">
+                        <NewsCard key={"nc_"+(index+1)} article={this.state.headlines[index + 1]}></NewsCard>
+                    </Col>
+                    <Col key={"col_"+(index + 2)} className="mb-3">
+                        <NewsCard key={"nc_"+(index+2)} article={this.state.headlines[index + 2]}></NewsCard>
+                    </Col>
+                </Row></>
+            )
+        } else {
+            return (
+                <></>
+            )
+        }
+
     }
 
     render() {
@@ -62,10 +77,8 @@ class Health extends React.Component {
                         height: '100vh'
                     }}
                 >
-                    <Container className="mt-3">
-                        <Row>
-                            {this.state.headlines.map(this.getHeadline)}
-                        </Row>
+                    <Container className="mt-3">    
+                        {headlines.map(this.getHeadline)}
                     </Container>
                 </div>
             )

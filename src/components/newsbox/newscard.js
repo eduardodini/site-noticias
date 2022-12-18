@@ -13,15 +13,16 @@ class NewsCard extends React.Component {
     render() {
         return (
             <Card style={{ width: '18rem' }}>
-                <Card.Img variant="top" src={this.props.article.urlToImage} />
+                <Card.Img variant="top" width="85%" src={this.props.article.urlToImage} />
                 <Card.Body>
-                    <Card.Title>{this.props.article.title ? this.props.article.title.substr(0, 40) : ""}</Card.Title>
-                    <Card.Text>{this.props.article.description ? this.props.article.description.substr(0, 80) : ""}</Card.Text>
+                    <Card.Title>{this.props.article.title ? this.props.article.title.substr(0, 120) : ""}</Card.Title>
+                    <Card.Text>{this.props.article.description ? this.props.article.description.substr(0, 480) : ""}</Card.Text>
                     <Button variant="primary">Leia tudo</Button>
                 </Card.Body>
             </Card>
         )
     }
 }
+
 
 export default NewsCard;
