@@ -9,25 +9,30 @@ import Form from 'react-bootstrap/Form'
 import Button from 'react-bootstrap/Button'
 
 const Navbar = () => {
+    const handleClick = () => {
+        <NavLink to='/search'></NavLink>
+    }
+
     return (
         <>
         <Nav>
             <Bars />
             <NavMenu>
-                <NavLink to='/main'>Principal</NavLink>
+                <NavLink to='/'>Principal</NavLink>
                 <NavLink to='/politics'>Política</NavLink>
                 <NavLink to='/education'>Educação </NavLink>
                 <NavLink to='/health'>Saúde</NavLink>
                 <NavLink to='/contact'>Contato</NavLink>
                 <Form className="d-flex">
-                    <Form.Control
+                        <Form.Control
                         type="search"
-                        placeholder="Search"
+                        placeholder="Pesquisar"
                         className="me-2"
                         aria-label="Search"
-                    />
-                    <Button variant="outline-success">Pesquisar</Button>
-                </Form>
+                        /></Form>
+                <NavLink to='/search'>
+                    <Button variant="outline-success" onClick={handleClick}>Pesquisar</Button>
+                </NavLink>
             </NavMenu>
         </Nav>
         </>

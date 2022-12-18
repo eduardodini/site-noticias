@@ -8,6 +8,7 @@ import Politics from './pages/politics';
 import Education from './pages/health';
 import Health from './pages/health';
 import Contact from './pages/contact';
+import Search from './pages/search';
 
 
 function App() {
@@ -16,11 +17,12 @@ function App() {
       <Router>
         <Navbar />
         <Routes>
-          <Route path='/main' element={<Main />} />
+          <Route path='/' element={<Main />} />
           <Route path='/politics' element={<Politics />} />
           <Route path='/education' element={<Education />} />
           <Route path='/health' element={<Health />} />
           <Route path='/contact' element={<Contact />} />
+          <Route path='/search' element={<Search />} />
         </Routes>
       </Router>
     </><Footer /></>
