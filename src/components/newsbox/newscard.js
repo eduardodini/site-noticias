@@ -1,12 +1,7 @@
 import React from 'react';
 import { Card, Button } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
 
 class NewsCard extends React.Component {
-    constructor(props) {
-        super(props);
-    }
-
     componentDidMount() {
     }
 
@@ -17,7 +12,8 @@ class NewsCard extends React.Component {
                 <Card.Body>
                     <Card.Title>{this.props.article.title ? this.props.article.title.substr(0, 120) : ""}</Card.Title>
                     <Card.Text>{this.props.article.description ? this.props.article.description.substr(0, 480) : ""}</Card.Text>
-                    <Button variant="primary">Leia tudo</Button>
+                    <Button variant="primary" padding="5px">Leia tudo</Button>
+                    <Button variant="secondary">Curtir 👍</Button>
                 </Card.Body>
             </Card>
         )
